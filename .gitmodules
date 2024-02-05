@@ -1,3 +1,6 @@
 [submodule "stable_diffusion_webui"]
 	path = stable_diffusion_webui
-	url = https://github.com/AUTOMATIC1111/stable-diffusion-webui/
+	url = https://github.com/Yomisana/stable-diffusion-webui/
+[submodule "portable_python"]
+	path = portable_python
+	url = https://github.com/Yomisana/portable_python_310
