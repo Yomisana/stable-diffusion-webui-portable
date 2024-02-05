@@ -3,7 +3,7 @@
 echo.
 echo =========================================================================
 echo Yomisana GTX 1660 Ti Stable Diffusion For Windows portable python version
-echo Àu¦Ì¼»¨º GTX 1660 Ti Stable Diffusion For Windows §K¦w¸Ë python ª©¥»
+echo ï¿½uï¿½Ì¼ï¿½ï¿½ï¿½ GTX 1660 Ti Stable Diffusion For Windows ï¿½Kï¿½wï¿½ï¿½ python ï¿½ï¿½ï¿½ï¿½
 echo =========================================================================
 echo.
 
@@ -32,8 +32,10 @@ if exist %venv_folder% (
 @REM set GIT= 
 @REM default virtual environment directory
 @REM set VENV_DIR=
+@REM yomisana custom command line arguments
+set COMMANDLINE_ARGS=--theme=dark --xformers --disable-safe-unpickle --medvram
 @REM use GPU 6G Video RAM
-set COMMANDLINE_ARGS= --xformers --disable-safe-unpickle --medvram
+@REM set COMMANDLINE_ARGS= --xformers --disable-safe-unpickle --medvram
 @REM @REM use less than 6G Video RAM
 @REM set COMMANDLINE_ARGS= --xformers --disable-safe-unpickle --lowvram
 @REM @REM use CPU only
