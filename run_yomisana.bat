@@ -32,8 +32,9 @@ if exist %venv_folder% (
 @REM set GIT= 
 @REM default virtual environment directory
 @REM set VENV_DIR=
-@REM yomisana custom command line arguments
-set COMMANDLINE_ARGS=--theme=dark --xformers --disable-safe-unpickle --medvram
+@REM yomisana custom command line 
+set PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:512
+set COMMANDLINE_ARGS=--theme=dark --xformers --no-half --disable-safe-unpickle --medvram
 @REM use GPU 6G Video RAM
 @REM set COMMANDLINE_ARGS= --xformers --disable-safe-unpickle --medvram
 @REM @REM use less than 6G Video RAM
@@ -45,4 +46,5 @@ set COMMANDLINE_ARGS=--theme=dark --xformers --disable-safe-unpickle --medvram
 call webui.bat
 
 @REM if call webui.bat not work will pause
+cd ..
 pause
